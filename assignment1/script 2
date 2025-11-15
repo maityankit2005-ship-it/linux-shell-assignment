@@ -1,0 +1,10 @@
+#!/bin/bash
+while true
+do
+    echo "---- Status ----" >> status.txt
+    date >> status.txt
+    free -m >> status.txt
+    ps aux --sort=-%cpu | head -5 >> status.txt
+    echo "" >> status.txt
+    sleep 5
+done
