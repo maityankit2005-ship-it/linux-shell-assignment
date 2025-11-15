@@ -1,0 +1,11 @@
+#!/bin/bash
+# Backup Script
+# Author: (My Name)
+# Purpose: To copy a directory with timestamp
+
+source="/home/user/myfolder"
+backup="/home/user/backup_$(date +%Y%m%d%H%M)"
+
+cp -r "$source" "$backup"
+
+echo "Backup successful!"
