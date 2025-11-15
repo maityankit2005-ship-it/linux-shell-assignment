@@ -1,0 +1,6 @@
+#!/bin/bash
+# Download Script
+
+url="https://example.com/file.zip"
+wget $url -P ~/Downloads
+echo "Download completed."
